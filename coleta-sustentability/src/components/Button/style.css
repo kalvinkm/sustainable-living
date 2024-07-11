@@ -1,0 +1,39 @@
+.register {
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    background: #317f54;;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.register:hover {
+    background: #2fb86e;
+}
+
+.registerLabel {
+    background: rgba(0,0,0,.08);
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+}
+
+.registerLabe svg {
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}
+
+.register strong {
+    flex: 1 1;
+    text-align: center;
+    color: #fff;
+    padding-right: 1px;
+}

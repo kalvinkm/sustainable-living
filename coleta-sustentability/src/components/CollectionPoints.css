@@ -1,0 +1,236 @@
+.collection-points-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.collection-points-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.back-to-home {
+    color: #322153;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-home svg {
+    margin-right: 16px;
+    color: #317f54;
+}
+
+.main-collection-points-container {
+    margin: 0 auto;
+}
+
+.form-collection-points {
+    margin: 50px auto;
+    padding: 64px;
+    max-width: 730px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    color: #322153;
+    font-size: 36px;
+}
+
+.dropzone-message-error,
+.name-message-error,
+.email-message-error,
+.uf-message-error,
+.city-message-error,
+.place-message-error,
+.items-message-error {
+    max-width: 100%;
+    width: 230px;
+    height: auto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fe392f;
+    display: flex;
+    margin-top: 4px;
+}
+
+.dropzone-message-error::before,
+.name-message-error::before,
+.email-message-error::before,
+.uf-message-error::before,
+.city-message-error::before,
+.place-message-error::before,
+.items-message-error::before {
+    content: "";
+    display: block;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M8 15A7 7 0 108 1a7 7 0 000 14z' fill='%23FE392F'/%3E%3Cpath d='M11 5l-6 6m0-6l6 6-6-6z' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    max-width: 14px;
+    width: 100%;
+    max-height: 14px;
+    margin-right: 5px;
+}
+
+.form-collection-points fieldset {
+    margin-top: 64px;
+    min-inline-size: auto;
+    border: 0;
+}
+
+.form-collection-points legend {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.legend-title-data {
+    font-size: 24px;
+    color: #322153;
+}
+
+.field {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.field label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.field input[type=text],
+.field input[type=email],
+.field select {
+    flex: 1 1;
+    background: #f0f0f5;
+    border-radius: 8px;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    color: #6c6c80;
+}
+
+.field input[type=email]#email,
+.field input[type=text]#whatsapp,
+.field input[type=text]#logradouro,
+.field input[type=text]#numero {
+    max-height: 51px;
+}
+
+.field input[type=email],
+.field select#uf,
+.field input[type=text]#logradouro,
+.field input[type=checkbox]#disableNumeroCheckbox {
+    margin-right: 10px;
+}
+
+.field select#uf,
+.field select#city {
+    max-height: 53px;
+}
+
+.field-group {
+    flex: 1 1;
+    display: flex;
+}
+
+.places-and-number {
+    flex-direction: column;
+}
+
+.fields-groups-input {
+    display: flex;
+}
+
+.checkbox-area {
+    flex-direction: row;
+}
+
+label.disableNumeroCheckbox {
+    margin: 0;
+}
+
+.custom-checkbox:checked {
+    background-color: green;
+}
+
+.page-create-button {
+    width: 260px;
+    height: 56px;
+    background-color: #317f54;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border: 0;
+    align-self: flex-end;
+    margin-top: 40px;
+    transition: background-color .2s;
+    cursor: pointer;
+}
+
+.page-create-button:hover {
+    background: #e1faec;
+    color: #317f54;
+    border: 1px solid #317f54;
+}
+
+.select-items {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6c6c80;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 16px;
+    gap: 16px;
+    list-style: none;
+}
+
+.items-grid li {
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    height: 180px;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.items-grid li.selected {
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li span {
+    flex: 1 1;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    color: #322153;
+}
